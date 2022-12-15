@@ -68,3 +68,126 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+import {
+Flex,
+Image,
+Stack,
+Card,
+CardBody,
+Grid,
+Text,
+Box,
+Spacer,
+HStack
+} from "@chakra-ui/react"
+
+const FirstCard = () => {
+
+return (
+<>
+
+<Box>
+  <Text>Flex and Spacer: Full width, equal Spacing</Text>
+  <Flex>
+    <Box w='70px' h='10' bg='red.500' />
+   
+    <Card maxW='sm'>
+    <Box>
+    <CardBody>
+    <Image
+      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+  </CardBody>
+        </Box>
+        <Box>
+    <CardBody>
+    <Image
+      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+  </CardBody>
+        </Box>
+
+{/_ <CardBody>
+<Image
+      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192307_cc.png'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+</CardBody> _/}
+</Card>
+
+    <Spacer />
+    <Box w='170px' h='10' bg='red.500' />
+    <Spacer />
+    <Box w='180px' h='10' bg='red.500' />
+
+  </Flex>
+
+  <Text>
+    Grid: The children start at the beginning, the 1/3 mark and 2/3 mark
+  </Text>
+  <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+    <Box w='70px' h='10' bg='blue.500' />
+    <Box w='170px' h='10' bg='blue.500' />
+    <Box w='180px' h='10' bg='blue.500' />
+  </Grid>
+
+  <Text>
+    HStack: The children have equal spacing but don't span the whole container
+  </Text>
+  <HStack spacing='24px'>
+    <Box w='70px' h='10' bg='teal.500' />
+    <Box w='170px' h='10' bg='teal.500' />
+    <Box w='180px' h='10' bg='teal.500' />
+  </HStack>
+</Box>
+
+<Stack direction='row'>
+
+<Card maxW='sm'>
+  <CardBody>
+    <Image
+      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+  </CardBody>
+
+  <CardBody>
+    <Image
+      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192307_cc.png'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+  </CardBody>
+
+  <CardBody>
+    <Image
+      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192273_bb.png'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+  </CardBody>
+
+  <CardBody>
+    <Image
+      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192344_dd.png'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+  </CardBody>
+</Card>
+
+</Stack>
+
+    </>
+
+)
+}
+
+export default FirstCard;
