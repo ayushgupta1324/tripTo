@@ -1,3 +1,6 @@
+import tripTo from  "../TripTo.png"
+
+
 import {
     Box,
     Flex,
@@ -14,6 +17,7 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    Image
   } from '@chakra-ui/react';
   
   import {
@@ -29,7 +33,7 @@ import {
     return (
       <Box>
         <Flex
-          bg={useColorModeValue('white', 'gray.800')}
+          bg={useColorModeValue('transparent', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
@@ -52,13 +56,19 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-           
-  
+            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+              <DesktopLogoNav />
+            </Flex>
+          </Flex>
+
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'end' }}>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
           </Flex>
   
+                          {/*                   SignIn Btn                               */}
+
           <Stack
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
@@ -94,6 +104,16 @@ import {
     );
   }
   
+const DesktopLogoNav = () => {
+  return (
+    <Stack direction={'row'} spacing={2}>
+        <Image width={10} src={tripTo} alt="logo"/>
+        <Text fontSize='lg' fontWeight={500}>tripTo</Text>
+    </Stack>
+
+  )
+}
+
   const DesktopNav = () => {
     const linkColor = useColorModeValue('gray.600', 'gray.200');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
@@ -101,6 +121,7 @@ import {
   
     return (
       <Stack direction={'row'} spacing={4}>
+        
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -149,7 +170,7 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
@@ -160,7 +181,7 @@ import {
             </Text>
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
-          <Flex
+          {/* <Flex
             transition={'all .3s ease'}
             transform={'translateX(-10px)'}
             opacity={0}
@@ -169,7 +190,7 @@ import {
             align={'center'}
             flex={1}>
             <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
-          </Flex>
+          </Flex> */}
         </Stack>
       </Link>
     );
