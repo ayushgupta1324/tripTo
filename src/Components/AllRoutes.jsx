@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import Top from './LandingPage/Top';
 import {Routes,Route} from "react-router-dom"
 
+
 function AllRoutes()
 {
 return(
