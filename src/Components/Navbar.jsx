@@ -1,5 +1,5 @@
 import tripTo from  "../TripTo.png"
-
+import { useState } from "react";
 
 import {
     Box,
@@ -30,15 +30,27 @@ import {
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
   
+    // const [colorChange, setColorchange] = useState(false);
+    // const changeNavbarColor = () =>{
+    //    if(window.scrollY >= 80){
+    //      setColorchange(true);
+    //    }
+    //    else{
+    //      setColorchange(false);
+    //    }
+    // };
+    // window.addEventListener('scroll', changeNavbarColor);
+
+
     return (
       <Box>
         <Flex
           bg={useColorModeValue('transparent', 'gray.800')}
-          color={useColorModeValue('gray.600', 'white')}
+          color={useColorModeValue('white', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
-          borderBottom={1}
+          // borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}>
@@ -79,7 +91,8 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'#'}>
+              href={'#'}
+              color={"white"}>
               Sign In
             </Button>
             {/* <Button
@@ -115,7 +128,7 @@ const DesktopLogoNav = () => {
 }
 
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
+    const linkColor = useColorModeValue('white', 'gray.200');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   

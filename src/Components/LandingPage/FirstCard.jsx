@@ -37,45 +37,7 @@ let content=[
 return (
     <>
 
-    
-{/*<Stack direction='row'>*/}
-
-{/* <Card maxW='sm'>
-  <CardBody>
-    <Image
-      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png'
-      alt='Green double couch with wooden legs'
-      borderRadius='lg'
-    />
-  </CardBody>
-
-  <CardBody>
-    <Image
-      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192307_cc.png'
-      alt='Green double couch with wooden legs'
-      borderRadius='lg'
-    />
-  </CardBody>
-
-  <CardBody>
-    <Image
-      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192273_bb.png'
-      alt='Green double couch with wooden legs'
-      borderRadius='lg'
-    />
-  </CardBody>
-
-  <CardBody>
-    <Image
-      src='https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192344_dd.png'
-      alt='Green double couch with wooden legs'
-      borderRadius='lg'
-    />
-  </CardBody>
-</Card> */}
-
-{/*</Stack>*/}
-<Flex w="90%" flexDirection='row' m="auto" alignItems="center" justifyContent="space-around" mt="24px">
+<Flex w="90%" flexDirection='row' m="auto" alignItems="center" justifyContent="space-around" mt="36px">
   
   {content.map((el)=>(<ProductSimple X={el.src} />))}
 </Flex>
