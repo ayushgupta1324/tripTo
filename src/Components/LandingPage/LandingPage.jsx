@@ -5,6 +5,7 @@ import Card3 from "./Card3"
 import ImageSlider from "./Carousel"
 import Card4 from "./Card4"
 import Card5 from "./Card5"
+import Card6 from "./Card6"
 
 const LandingPage = () => 
 {
@@ -17,6 +18,7 @@ const LandingPage = () =>
             <Card3/>
             <Card4/>
             <Card5/>
+            <Card6/>
         </>
     )
 }

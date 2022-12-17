@@ -5,10 +5,8 @@ import {SimpleGrid, Box,
     Stack,
     Heading,
     CardFooter,
-    ButtonGroup,
     Button,
     Text,
-    Divider,
 Flex} from "@chakra-ui/react"
 
     import {FaMapMarkerAlt} from "react-icons/fa"
@@ -48,13 +46,16 @@ let content = [
     return (
         <>
 
+<Box w={"90%"} m={"auto"}>
 
+<Text textAlign={"left"} mt={"36px"} mb="16px" fontWeight={"700"} fontSize={"28px"} lineHeight={"31px"} color={"#333333"}>
+Exclusively Curated: Tripoto's Mindful Retreats
+        </Text>
 
-
-    <SimpleGrid columns={[2, null, 3]} spacing='40px'>
+<SimpleGrid columns={[2, null, 3]} spacing='40px'>
 {
 content.map((el)=>(
-    <Card maxW='sm'>
+    <Card w={"355px"} variant={"unstyled"}>
   <CardBody>
     <Image
       src={el.src}
@@ -64,17 +65,17 @@ content.map((el)=>(
     <Stack mt='6' spacing='3'>
       <Heading size='sm' align={"left"} >{el.heading}</Heading>
       <Flex alignItems={"center"} justifyContent="space-between">
-      <Text display={"flex"} alignItems="center" ><FaMapMarkerAlt/> <span style={{color:"teal"}} >{el.place}</span> </Text>
-        <Text bg={"#359391"} color={"white"} borderRadius={"30px"} pl="8px" pr="8px" pt="4px" pb="4px" >{el.duration}</Text>
+      <Text fontSize={"14px"} fontWeight="700" display={"flex"} alignItems="center" ><FaMapMarkerAlt/> <span style={{color:"#359391"}} >{el.place}</span> </Text>
+        <Text bg={"#359391"} color={"white"} borderRadius={"30px"} pl="8px" pr="8px" pt="4px" pb="4px" fontSize={"12px"} fontWeight="400">{el.duration}</Text>
       </Flex>
 
       <Box>
-<Flex>
-<Text color='blue.600' fontSize='2xl'>
-      ₹{el.amount}/person
-      </Text>
-      <Button colorScheme='teal' variant='outline'>
-    Button
+<Flex justifyContent={"space-between"} h="50px">
+<Flex align={"center"}>
+      <Text fontSize="18px" fontWeight="700" color="#333" mr="8px">₹{el.amount}</Text> <Text fontSize={"14px"} fontWeight="400" opacity={"0.5"}>/person</Text> 
+</Flex>
+      <Button colorScheme='teal' variant='outline'  fontSize={"14px"} fontWeight="400" pt="4px" pr="8px" pb="4px" pl="8px">
+    Book Now
   </Button>
 </Flex>
 
@@ -102,6 +103,10 @@ content.map((el)=>(
 
 
             </SimpleGrid>
+</Box>
+
+
+    
         </>
     )
 }
