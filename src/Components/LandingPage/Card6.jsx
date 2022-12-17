@@ -2,63 +2,63 @@ import {Text,Card, CardBody, Image, Stack,SimpleGrid,Box} from "@chakra-ui/react
 import { Link } from "react-router-dom";
 
 
-function Card3()
+function Card6()
 {
 
 let content = [
 
 
     {
-        src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949651_1636600759_110.png`,
+        src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632307_1571062180_florian_wehde_fwtpzbjw_a0_unsplash.jpg`,
         alt:"Photo of These Thrilling",
         heading:"Resorts World Sentosa",
         text:"10 Best Places To Experience the Chills This Winter",
         name:"Kadambari Bhatte (curlytravelmess)"
     },
     {
-        src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949736_1635179153_pahalgam_gulmarg.jpeg`,
+        src:`https://static2.tripoto.com/media/filter/tst/img/388225/TripDocument/1508499780_106187671.jpg`,
         alt:"Photo of Visit These 7 C",
         heading:"singapore tourism Board",
         text:"15 Winter Destinations, That are Not Shimla or Manali",
         name:"Karishma Shaikh"
     },
     {
-        src:"https://static2.tripoto.com/media/filter/tst/img/1/SpotDocument/1478950878_1453102404_panamik_hot_geyser_springs_in_nubra_valley_ladakh.jpg",
+        src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863969_1493707507_15798144758_5a93457ae4_o.jpg",
         alt:"Photo of A Curated Guide",
         heading:"Resorts World Sentosa",
         text:"12 Hot Springs in India That Will Warm You Up This Winter",
         name:"Disha Kapkoti"
     },
     {
-        src:"https://static2.tripoto.com/media/filter/tst/img/192200/TripDocument/1571216585_adrithcollage.jpg",
+        src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1651046452_1545558276_erdap_2129568_1280.jpg",
         alt:"Photo of Just 3 Hours Aw",
         heading:"Oman Tourism",
         text:"Trips to Take with Your Bae This Winter in India",
         name:"Mouna Nanaiah"
     },
     {
-        src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666950604_1666207073_hornbill_festival_pix_by_vikramjit_kakati.jpg`,
+        src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1664284174_1638860409_photo_1459600661907_3c72c54955de.jpeg`,
         alt:"Photo of These Thrilling",
         heading:"Resorts World Sentosa",
         text:"Nagaland's Hornbill Festival is Happening this December",
         name:"Shruti Singh"
     },
     {
-        src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669621772_1479799117_19594481674_73bfdd5e4a_z.jpg`,
+        src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666951409_1654136098_chinatown_mural_art.jpg`,
         alt:"Photo of Visit These 7 C",
         heading:"singapore tourism Board",
         text:"26 Best Places In India To Visit This December",
         name:"Pritha Puri"
     },
     {
-        src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615182_1669300591_snip20220609_1_1024x573.png",
+        src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666952031_1637516919_img_8593.jpg",
         alt:"Photo of A Curated Guide",
         heading:"Resorts World Sentosa",
         text:"10 Events You Can't Miss This Winter in Delhi",
         name:"Tanisha Mundra"
     },
     {
-        src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632229_1635615472_picsart_10_30_11_07_24.jpg",
+        src:"https://static2.tripoto.com/media/filter/tst/img/464802/TripDocument/1576478834_cover.jpg",
         alt:"Photo of Just 3 Hours Aw",
         heading:"Oman Tourism",
         text:"10 Events You Can't Miss This Winter in Delhi",
@@ -72,7 +72,7 @@ let content = [
         <>
         <Box w={"90%"} m={"auto"}>
         <Text textAlign={"left"} mt={"36px"} fontWeight={"700"} fontSize={"28px"} lineHeight={"31px"} color={"#333333"}>
-        Find Best Places to Visit in India in December & January
+        Plan You Next International Trip During December & January
         </Text>
 
 <SimpleGrid columns={[2, null, 4]} spacing="4">
@@ -117,4 +117,4 @@ lineHeight={"26px"} color={"#333333"}  >
 
 }
 
-export default Card3;
+export default Card6;
