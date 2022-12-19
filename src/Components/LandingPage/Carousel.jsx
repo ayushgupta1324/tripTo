@@ -20,7 +20,7 @@ const slides=[
 ]
 
   return (
-    <Carousel infiniteLoop="true" autoPlay={"true"}>
+    <Carousel infiniteLoop="true" autoPlay={"true"} showThumbs={false}>
       {slides.map((slide) => {
         return(
             <Box width={"90%"} m="auto" mt="36px" >

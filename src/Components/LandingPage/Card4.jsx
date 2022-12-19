@@ -1,4 +1,4 @@
-import {Text,Card, CardBody, Image, Stack,Heading,SimpleGrid,Box} from "@chakra-ui/react"
+import {Text,Card, CardBody, Image, Stack,SimpleGrid,Box} from "@chakra-ui/react"
 import { Link } from "react-router-dom";
 
 
@@ -101,7 +101,6 @@ let content = [
         <Box w={"90%"} m={"auto"}>
             <Box w={"100%"}> 
             <Image w="98%" src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1669366871_kerala.jpg" borderRadius="md" mt={"24px"}/>
-
             </Box>
 
 <SimpleGrid columns={[2, null, 4]} spacing="4" mt={"24px"}>
