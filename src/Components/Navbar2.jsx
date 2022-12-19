@@ -32,7 +32,7 @@ import {
     ChevronRightIcon,
   } from '@chakra-ui/icons';
   
-  export default function Navbar() {
+  export default function Navbar2() {
     const { isOpen, onToggle,onOpen, onClose  } = useDisclosure();
 
     const {isAuth,username,logoutUser} = useContext(AuthContext);
@@ -42,7 +42,7 @@ const navigate = useNavigate();
     return (
       <Box>
         <Flex
-          bg={useColorModeValue('transparent', 'gray.800')}
+          bg={useColorModeValue('#6F8CB3', 'gray.800')}
           color={useColorModeValue('white', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
