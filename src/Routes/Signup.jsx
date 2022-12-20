@@ -16,6 +16,7 @@ import {
     Text,
     useColorModeValue,
     Link,
+    useToast
   } from '@chakra-ui/react';
 
   import { useState,useContext } from 'react';
@@ -29,7 +30,7 @@ function Signup()
     
     const {SignUpData} = useContext(AuthContext);
     const navigate = useNavigate();
-
+    const toast = useToast();
     const obj={
       firstname:"",
       lastname:"",
@@ -45,20 +46,46 @@ function Signup()
 
     function handleSubmit(event) {
         event.preventDefault();
-        if(formData.email=="" && formData.password=="" && formData.firstname=="" && formData.lastname==""){
-          alert("Fill in all the Details");
-          return;
+        if(formData.email=="" || formData.password=="" || formData.firstname==""){
+          return (
+            toast({
+          title: 'Details Missing.',
+          description: "Please fill in all the Details.",
+          status: 'error',
+          duration: 1000,
+          isClosable: true,
+          position:"top"
+        })
+
+          
+          );
       }
       else if(password.length<8){
-          alert("Password is too short");
           setFormData(obj);
-          return;
+          return (
+            toast({
+              title: "Can't creat Account",
+              description: "Password too short",
+              status: 'error',
+              duration: 1000,
+              isClosable: true,
+              position:"top"
+            })
+          );
       }
         
         setFormData(obj);
         SignUpData(formData)
+        toast({
+          title: "Account Created",
+          description: "Welcome to tripTo",
+          status: 'success',
+          duration: 1000,
+          isClosable: true,
+          position:"bottom"
+        })
         navigate("/Login");
-  
+
       }
 
     return (

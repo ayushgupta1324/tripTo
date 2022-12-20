@@ -86,37 +86,37 @@ function Card9()
         },
     ]
 
-    let content4 = [
+    // let content4 = [
 
 
-      {
-          src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368370_1650865492_nature_photographer_29ezcwtmtnm_unsplash.jpg`,
-          alt:"Photo of These Thrilling",
-          heading:"Resorts World Sentosa",
-          text:"Best Places To Visit In Kerala During Your Next Trip",
+    //   {
+    //       src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368370_1650865492_nature_photographer_29ezcwtmtnm_unsplash.jpg`,
+    //       alt:"Photo of These Thrilling",
+    //       heading:"Resorts World Sentosa",
+    //       text:"Best Places To Visit In Kerala During Your Next Trip",
         
-      },
-      {
-          src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368402_1656747258_dream_holidays_c8mz8fp_zvc_unsplash.jpg`,
-          alt:"Photo of Visit These 7 C",
-          heading:"singapore tourism Board",
-          text:"Complete Guide To Kovalam Beach In Kerala",
+    //   },
+    //   {
+    //       src:`https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368402_1656747258_dream_holidays_c8mz8fp_zvc_unsplash.jpg`,
+    //       alt:"Photo of Visit These 7 C",
+    //       heading:"singapore tourism Board",
+    //       text:"Complete Guide To Kovalam Beach In Kerala",
           
-      },
-      {
-          src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368422_1650645286.jpeg",
-          alt:"Photo of A Curated Guide",
-          heading:"Resorts World Sentosa",
-          text:"Top 10 Resorts in Munnar for Your Next Holiday",
+    //   },
+    //   {
+    //       src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368422_1650645286.jpeg",
+    //       alt:"Photo of A Curated Guide",
+    //       heading:"Resorts World Sentosa",
+    //       text:"Top 10 Resorts in Munnar for Your Next Holiday",
         
-      },
-      {
-          src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368429_1669359075_screenshot_2022_11_25_at_12_18_09_pm.png",
-          alt:"Photo of Just 3 Hours Aw",
-          heading:"Oman Tourism",
-          text:"Save the Date: 5th Edition of Kochi Muziris-Biennale",
+    //   },
+    //   {
+    //       src:"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368429_1669359075_screenshot_2022_11_25_at_12_18_09_pm.png",
+    //       alt:"Photo of Just 3 Hours Aw",
+    //       heading:"Oman Tourism",
+    //       text:"Save the Date: 5th Edition of Kochi Muziris-Biennale",
           
-      },]
+    //   },]
 
     return (
         <>
@@ -187,7 +187,7 @@ function Card9()
 
   </Box>
 
-<Box w={"90%"} m={"auto"}>
+<Box w={"90%"} m={"auto"} >
 
         <Text textAlign={"left"} mt={"36px"} fontWeight={"700"} fontSize={"28px"} lineHeight={"31px"} color={"#333333"}>
         Watch Tripoto's Top Travel Vlogs of the Week

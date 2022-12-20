@@ -88,11 +88,14 @@ const navigate = useNavigate();
 
 {
 isAuth==true?
-<p>{username}</p>:( <Button
+<Text mt="8px" fw="500" fontSize={"14px"}>{username}</Text>:( <Button
           as={'a'}
-          fontSize={'sm'}
+          size="sm"
+          fontSize={'md'}
           fontWeight={400}
-          variant={'link'}
+          variant={'outline'}
+          _hover={{bgColor:"transparent"}}
+          cursor="pointer"
           // href={'#'}
           color={"white"}
           onClick={
@@ -109,11 +112,14 @@ isAuth==true?
   isAuth==true?
    <Button
     as={'a'}
-    fontSize={'sm'}
+    size="sm"
+    fontSize={'md'}
     fontWeight={400}
-    variant={'link'}
+    variant={'outline'}
     // href={'#'}
     color={"white"}
+    _hover={{bgColor:"transparent"}}
+    cursor="pointer"
     onClick={
       ()=>{
         logoutUser();
@@ -135,9 +141,14 @@ isAuth==true?
   }
   
 const DesktopLogoNav = () => {
+  const navigate = useNavigate()
   return (
     <Stack direction={'row'} spacing={2}>
-        <Image width={10} src={tripTo} alt="logo"/>
+        <Image width={10} src={tripTo} alt="logo" cursor={"pointer"} onClick={
+            ()=>{
+              navigate("/");
+            }
+          }/>
         <Text fontSize='lg' fontWeight={500}>tripTo</Text>
     </Stack>
 
@@ -214,17 +225,6 @@ const DesktopLogoNav = () => {
             </Text>
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
-
-          {/* <Flex
-            transition={'all .3s ease'}
-            transform={'translateX(-10px)'}
-            opacity={0}
-            _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
-            justify={'flex-end'}
-            align={'center'}
-            flex={1}>
-            <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
-          </Flex> */}
         </Stack>
       </Link>
     );

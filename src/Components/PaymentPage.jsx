@@ -1,12 +1,21 @@
-import {Box,Flex,Text} from "@chakra-ui/react"
-
+import {Box,Flex,Text,Image} from "@chakra-ui/react"
+import Navbar2 from "./Navbar2";
+import { useParams } from "react-router-dom";
 
 const PaymentPage = ()=>
 {
 
+    // const getDetails = () =>
+    // {
+
+    // }
+
 return(
     <>
-    <Box w="90%" m="auto">
+
+    <Navbar2/>
+
+    {/* <Box w="90%" m="auto" mt="56px">
     <Flex direction="row">
 
 <Box>
@@ -77,7 +86,11 @@ return(
 
 
     </Box>
-    
+     */}
+     <Box display={"flex"} alignItems="center" w="90%" m="auto" h="500px">
+     <Image  src="https://crfitnessdotnet.files.wordpress.com/2015/09/work-in-progress.png" alt="WIP"/>
+
+     </Box>
 
     </>
 )

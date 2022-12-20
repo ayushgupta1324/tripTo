@@ -88,7 +88,7 @@ const navigate = useNavigate();
 
 {
 isAuth==true?
-<p>{username}</p>:( <Button
+<Text mt="8px" fw="500" >{username}</Text>:( <Button
           as={'a'}
           fontSize={'sm'}
           fontWeight={400}
@@ -111,9 +111,10 @@ isAuth==true?
     as={'a'}
     fontSize={'sm'}
     fontWeight={400}
-    variant={'link'}
-    // href={'#'}
+    variant={'outline'}
     color={"white"}
+    _hover={{bgColor:"transparent"}}
+    cursor="pointer"
     onClick={
       ()=>{
         logoutUser();
@@ -135,9 +136,18 @@ isAuth==true?
   }
   
 const DesktopLogoNav = () => {
+  const navigate = useNavigate();
   return (
-    <Stack direction={'row'} spacing={2}>
-        <Image width={10} src={tripTo} alt="logo"/>
+    <Stack direction={'row'} spacing={2} cursor={"pointer"} onClick={
+      ()=>{
+        navigate("/");
+      }
+    }>
+        <Image width={10} src={tripTo} alt="logo" cursor={"pointer"} onClick={
+            ()=>{
+              navigate("/");
+            }
+          }/>
         <Text fontSize='lg' fontWeight={500}>tripTo</Text>
     </Stack>
 

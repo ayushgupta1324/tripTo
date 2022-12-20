@@ -6,6 +6,7 @@ import Signup from "./Signup"
 import LandingPage from '../Components/LandingPage/LandingPage';
 import PackagePage from "../Components/PackagePage";
 import PaymentPage from "../Components/PaymentPage";
+import PrivateRoute from "./PrivateRoute";
 
 function AllRoutes()
 {
@@ -16,8 +17,9 @@ return(
             <Route path = "/" element = {<LandingPage/>}/>
             <Route path="/Login" element={<Login/>} />
             <Route path="Signup" element={<Signup/>}/>
-            <Route path="/PackagePage/:id" element={<PackagePage/>}/>
-            <Route path="/PaymentPage" element={<PaymentPage/>}/>
+
+            <Route path="/PackagePage/:id" element={ <PrivateRoute><PackagePage/></PrivateRoute> }/>
+            <Route path="/PaymentPage" element={<PrivateRoute><PaymentPage/></PrivateRoute>}/>
         </Routes>
 )
 }

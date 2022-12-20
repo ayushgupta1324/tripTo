@@ -41,18 +41,7 @@ const handleChange = (e)=>{
 
 const handleSubmit = (event)=>{
   event.preventDefault();
-  // loginUser(formData)
-//   if(isAuth==true)
-//   {
-//     navigate("/")}
-//   else
-//   {
-//     <Alert status='error'>
-//   <AlertIcon />
-//   <AlertTitle>Your browser is outdated!</AlertTitle>
-//   <AlertDescription>Your Chakra experience may be degraded.</AlertDescription>
-// </Alert>
-//   }
+
 
 if(loginUser(formData)==true){
   setFormData(obj);
@@ -90,7 +79,7 @@ else if(loginUser(formData)==false){
             <Stack align={'center'}>
               <Heading fontSize={'4xl'}>Sign in to your account</Heading>
               <Text fontSize={'lg'} color={'gray.600'}>
-                to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
+                to become part of <Link onClick={()=>{navigate("/")}} color={'blue.400'} _hover={{textDecoration:"none"}}>tripTo  </Link> family 
               </Text>
             </Stack>
 

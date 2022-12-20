@@ -1,4 +1,4 @@
-import {Divider,SimpleGrid,Box,Text,Stack,Image,Flex} from "@chakra-ui/react"
+import {Divider,SimpleGrid,Box,Text,Stack,Image,Flex,Grid, GridItem} from "@chakra-ui/react"
 import tripTo from  "../TripTo.png"
 import {ImFacebook2} from "react-icons/im"
 import {FaTwitterSquare} from "react-icons/fa"
@@ -8,11 +8,6 @@ import {BsInstagram,BsYoutube,BsPinterest,BsRssFill } from "react-icons/bs"
 
 function Footer()
 {
-
-//     footerText=[
-
-// {},{},{},{}
-
 return(
     
 
@@ -21,124 +16,126 @@ return(
     <>
    
     <Divider/>
-    
+
 
 <SimpleGrid columns={[2, null, 5]} spacing='40px' w="90%" m="auto"  mt="30px">
 
-<Box height='80px'>
+<Box height='auto'>
 <Stack direction={'row'} spacing={2}>
         <Image width={10} src={tripTo} alt="logo"/>
         <Text fontSize='lg' fontWeight={500}>tripTo</Text>
     </Stack>
-    <Text>India's Largest Travel Community</Text>
-    <Flex justifyContent={"space-around"}><ImFacebook2/> <FaTwitterSquare/> <BsInstagram/> <BsYoutube/> <BsPinterest/> <BsRssFill/> </Flex>
-    <Image src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg"/>
+    <Text fontSize="12px" color="#333" fontFamily={"helvetica"} fontWeight={"300"} lineHeight="20px">India's Largest Travel Community</Text>
+    <Divider/>
+    <Flex justifyContent={"space-around"} mb="8px" pt="8px" lineHeight={"20px"} fontSize="18px"><ImFacebook2/> <FaTwitterSquare/> <BsInstagram/> <BsYoutube/> <BsPinterest/> <BsRssFill/> </Flex>
+    <Image m="auto" mt="8px" mb="8px" src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg"/>
 </Box>
 
-  <Box height='80px'>
+  <Box height='auto' textAlign={"left"} fontSize="12px" color="#333" fontFamily={"helvetica"} fontWeight={"300"} lineHeight="18px">
 
-<Text>About Tripoto
+<Text fontSize="16px" color="#333" fontWeight={"500"} pb="4px" fontFamily={"helvetica"}>About Tripoto
 </Text>
-<Text>How It Works
+<Text mt="8px" mb="8px">How It Works
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 FAQ’s
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Privacy Policy
-</Text>
-<Text>
+</Text >
+<Text mt="8px" mb="8px">
     Terms & Conditions
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Careers
 </Text>
-<Text>Contact Us
+<Text mt="8px" mb="8px">Contact Us
 </Text>
 
   </Box>
-  <Box height='80px'>
+  <Box height='auto' textAlign={"left"} fontSize="12px" color="#333" fontFamily={"helvetica"} fontWeight={"300"} lineHeight="18px">
 
-<Text>
+<Text fontSize="16px" color="#333" fontWeight={"500"} pb="4px" fontFamily={"helvetica"}>
 Products
 
 </Text>
-<Text>
+<Text mt="8px" mb="8px"> 
 Tour Packages
 
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Travel Guides
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Trips & Itineraries
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Weekend Getaways
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Places to Visit
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Other Travel Categories
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Tripoto Forum
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Honeymoon Packages
 
 </Text>
     
   </Box>
-  <Box height='80px'>
 
-<Text>Important Travel Links
+  <Box height='auto' textAlign={"left"} fontSize="12px" color="#333" fontFamily={"helvetica"} fontWeight={"300"} lineHeight="18px">
+
+<Text fontSize="16px" color="#333" fontWeight={"500"} pb="4px" fontFamily={"helvetica"}>Important Travel Links
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Goa Tourism
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Dubai Tourism
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Singapore Tourism
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Kerala Tourism
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Manali Tourism
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Bali Tourism
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Sri Lanka Tourism
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Honeymoon Destinations In India
 </Text>
 
   </Box>
-  <Box height='80px'>
-<Text>
+
+  <Box height='auto' textAlign={"left"} fontSize="12px" color="#333" fontFamily={"helvetica"} fontWeight={"300"} lineHeight="18px">
+<Text fontSize="16px" color="#333" fontWeight={"500"} pb="4px" fontFamily={"helvetica"}>
 Partner Programs
 
 </Text>
-<Text>Buy Travel Leads
-y</Text>
-<Text>Partner With Us
+<Text mt="8px" mb="8px">Buy Travel Leads</Text>
+<Text mt="8px" mb="8px">Partner With Us
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Earn Credits
 
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Get Paid To Travel
 
 </Text>
-<Text>
+<Text mt="8px" mb="8px">
 Import Blog To Itinerar
 </Text>
 
