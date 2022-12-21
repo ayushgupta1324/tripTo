@@ -1,3 +1,18 @@
+# Project Name and Descreption
+tripTo
+
+`tripTo` is a clone of social travel platform `tripoto`. Essentialy it offers 3 service,
+1. It's a platform to share travel stories.
+
+2. You can plan your trip.
+
+3. You can connect with fellow travellers.
+
+This project was mostly build within 6 days, but further regular enhancements has been made to improve the user experience.
+
+# Live Website hosted on Netlify
+#### triptosite.netlify.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
