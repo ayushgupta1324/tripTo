@@ -1,85 +1,55 @@
 # Project Name and Descreption
-tripTo
+## tripTo
 
-`tripTo` is a clone of social travel platform `tripoto`. Essentialy it offers 3 service,
-1. It's a platform to share travel stories.
+`tripTo` is inspired from social travel platform `tripoto`. Essentialy it offers 3 service,
+-   It's a platform to share travel stories.
 
-2. You can plan your trip.
+-   You can plan your trip.
 
-3. You can connect with fellow travellers.
+-   You can connect with fellow travellers.
 
-This project was mostly build within 6 days, but further regular enhancements has been made to improve the user experience.
+This project was build within 6 days, with further regular enhancements made to improve the user experience.
 
-# Live Website hosted on Netlify
-#### triptosite.netlify.app
 
-# Getting Started with Create React App
+<h2 align="center">🖥️ Tech Stack</h2>
+ <p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5" />
+  <img src="https://img.shields.io/badge/react-grey?style=for-the-badge&logo=react&logoColor=43A4BE" alt="html5" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h2 align="center">🖥🛠️ Deployed on</h2>
+<p align="center">
+  <img src="https://img.shields.io/badge/netlify-white?style=for-the-badge&logo=netlify&logoColor=43A4BE" alt="netlify" />
+</p>
 
-In the project directory, you can run:
+[https://triptosite.netlify.app/](https://triptosite.netlify.app/) <br/>
 
-### `npm start`
+<h3>HomePage : </h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![tripto_s1](https://user-images.githubusercontent.com/112663758/221914128-da3e7d24-ab07-42ea-b3d0-92d413cdf213.PNG)
+![tripto_lp2](https://user-images.githubusercontent.com/112663758/221914272-1ff80b96-42ed-495c-82af-4d62adb538cd.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3>SignUp Page : </h3>
 
-### `npm test`
+![tripto_signup](https://user-images.githubusercontent.com/112663758/221915619-fa66ebea-40de-4457-b499-a41d56e136f9.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>SignIn Page : </h3>
 
-### `npm run build`
+![tripto_signin](https://user-images.githubusercontent.com/112663758/221915635-e0543110-ad52-4200-adb4-2257eab92106.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h3>Package Page : </h3>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![tripto_PackagePage](https://user-images.githubusercontent.com/112663758/221916504-90c4ad38-fa8f-4bee-99bd-df13fac48910.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Package Page is accessible only after successful Login as it's prevented using Private Route
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Installed NPM Packages
+- React
+- React-router-dom
+- chakra-UI (5)
+- axios
+<br/>
+The backend of the project is created locally on JSON server.<br/>
