@@ -11,7 +11,7 @@ const navigate=useNavigate();
 
 
 const SignUpData=(form)=>{
-    axios.post('https://zany-cyan-angelfish-tutu.cyclic.app/users', {
+    axios.post('https://pear-nice-crab.cyclic.app/users', {
         ...form
        })
        .then(function (response) {
@@ -28,7 +28,7 @@ const SignUpData=(form)=>{
 const loginUser=async (Data)=>{
 
   try {
-    const response = await axios.get('https://zany-cyan-angelfish-tutu.cyclic.app/users');
+    const response = await axios.get('https://pear-nice-crab.cyclic.app/users');
     let data = response.data;
 
     for(let i=0;i<data.length;i++)

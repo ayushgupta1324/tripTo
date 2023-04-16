@@ -247,7 +247,7 @@ const DesktopLogoNav = () => {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Stack spacing={4} onClick={children && onToggle}>
+      <Stack spacing={5} onClick={children && onToggle}>
         <Flex
           py={2}
           as={Link}

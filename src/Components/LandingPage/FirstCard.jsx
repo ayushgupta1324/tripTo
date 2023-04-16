@@ -39,7 +39,7 @@ return (
 
 <Flex w="90%" flexDirection='row' m="auto" alignItems="center" justifyContent="space-around" mt="36px">
   
-  {content.map((el)=>(<ProductSimple X={el.src} />))}
+  {content.map((el,index)=>(<ProductSimple key={index} X={el.src} />))}
 </Flex>
 
     </>
