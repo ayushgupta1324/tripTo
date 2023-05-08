@@ -4,7 +4,7 @@ export default function ProductSimple({ X }) {
       <img
         src={X}
         alt={"img"}
-        style={{ height: "66.52px", width: "278.75px" }}
+        style={{ height: "66.52px", width: "278.75px", cursor:"pointer" }}
       />
     </div>
   );

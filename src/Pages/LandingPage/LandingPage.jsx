@@ -7,7 +7,8 @@ import Card4 from "./Card4"
 import Card5 from "./Card5"
 import Card6 from "./Card6"
 import Card9 from "./Card9"
-import Footer from "../Footer"
+import Footer from "../../Components/Footer"
+// import Footer from "../Footer"
 
 const LandingPage = () => 
 {

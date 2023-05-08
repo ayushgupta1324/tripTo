@@ -1,5 +1,5 @@
 import styles from "./Top.css";
-import Navbar from "../Navbar";
+// import Navbar from "../Navbar";
 
 import {
   Stack,
@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 import { Search2Icon } from "@chakra-ui/icons";
+import Navbar from "../../Components/Navbar";
 
 function Top() {
   const headingStyle = {
@@ -24,7 +25,7 @@ function Top() {
   return (
     <div>
       <div className="TopDiv">
-        <Navbar />
+        <Navbar/>
         <div className="TopSection">
           <h1 style={headingStyle}>India's Largest Community of Travellers</h1>
 
